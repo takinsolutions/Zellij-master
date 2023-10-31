@@ -70,8 +70,23 @@
     {%- endwith %}
 </section>
 
-<section class="content">
-    {% block content %}
-    {% endblock %}
+<!-- New top-navigation bar -->
+{% block top_navigation %}
+<section class="top-navigation">
+    {%- include 'menu.snippet.html' %}
 </section>
+<style>
+    .menu-items {
+        display: flex;
+    }
+
+    .menu-items > div {
+        margin-right: 20px; /* Adjust the spacing between items */
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="content"></section>
+{% endblock %}
 </body>

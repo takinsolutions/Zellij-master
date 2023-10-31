@@ -1,17 +1,15 @@
-{%- if g.user %}
-			<li><a href="{{ url_for('docs.main') }}">Generate<br />Documentation</a></li>
-			<li><a href="{{ url_for('datasources.connections') }}">Manage<br />Data Sources</a></li>
-			<li><a href="{{ url_for('tools.jsonconverter') }}">RDF to<br />JSON-LD</a></li>
-
-			<li><a href="{{ url_for('docs.multipleIndexGeneration') }}">Multiple<br />Index</a></li>
-
-			
-			<li class="user name"><a href="{{ url_for('user.edit') }}"><i class="fas fa-user"></i>{{ g.user['username'] }}</a></li>
-			<li class="user"><a href="{{ url_for('user.logout') }}">Log Out</a></li>
-{% else %}
-			<li><a href="{{ url_for('docs.main') }}">Generate<br />Documentation</a></li>
-			<li><a>Alphabetical<br/>Index</a></li>
-
-			<li class="user"><a href="{{ url_for('user.create') }}">Create<br />Account</a></li>
-			<li class="user"><a href="{{ url_for('user.login') }}">Log In</a></li>
-{% endif %}
+<div class="menu-items">
+    {% if g.user %}
+        <div><a href="{{ url_for('docs.main') }}">Generate Documentation</a></div>
+        <div><a href="{{ url_for('datasources.connections') }}">Manage Data Sources</a></div>
+        <div><a href="{{ url_for('tools.jsonconverter') }}">RDF to JSON-LD</a></div>
+        <div><a href="{{ url_for('docs.multipleIndexGeneration') }}">Multiple Index</a></div>
+        <div class="user name"><a href="{{ url_for('user.edit') }}"><i class="fas fa-user"></i>{{ g.user['username'] }}</a></div>
+        <div class="user"><a href="{{ url_for('user.logout') }}">Log Out</a></div>
+    {% else %}
+        <div><a href="{{ url_for('docs.main') }}">Generate Documentation</a></div>
+        <div><a>Alphabetical<br/>Index</a></div>
+        <div class="user"><a href="{{ url_for('user.create') }}">Create Account</a></div>
+        <div class="user"><a href="{{ url_for('user.login') }}">Log In</a></div>
+    {% endif %}
+</div>
