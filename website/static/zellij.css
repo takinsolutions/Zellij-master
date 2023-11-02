@@ -223,6 +223,20 @@ section.flash > div > ul {
     transform: rotate(90deg);
 }
 
+/* BLOCK HEADER */
+
+/* Apply styles to elements within the {% block header %} */
+.block-header {
+    height: 100px; /* Adjust the margin-top as needed */
+    /* Other styles for the elements within the block header */
+    margin-top: 200px;
+}
+.block-header-showgroups{
+    margin-top: 1px;
+}
+
+
+
 /* Section for the frames */
 
 .contents {
@@ -238,13 +252,13 @@ section.flash > div > ul {
 /*IFrame Section */
 
 .contents1 {
-    margin-top: 35px;
+    margin-top: 10px;
     position: absolute;
     left: 250px;
     width: calc(100% - 250px);
     height: 100%;
     border: none;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 /* LOGO CENTER */
@@ -277,7 +291,7 @@ section.flash > div > ul {
 /* Style the top navigation bar */
 .top-navigation {
     height: 65px; /* Height matches the nav bar height */
-    background-color: #a92c2c; /* Background color */
+    background-color: #ff9900; /* Background color */
     color: #fff; /* Text color */
     text-align: center;
     display: flex;
@@ -295,7 +309,7 @@ section.flash > div > ul {
 /* TOP NAVIGATION SECTION FOR GENERATE DOCUMENTATION */
 .top-navigation1 {
     height: 65px; /* Height matches the nav bar height */
-    background-color: #a92c2c; /* Background color */
+    background-color: #ff9900; /* Background color */
     color: #fff; /* Text color */
     text-align: center;
     display: flex;
@@ -342,7 +356,11 @@ section.flash > div > ul {
     transition: 0.3s ease;
     border: 2px solid #333; /* Add border styles here */
     padding: 10px; /* Add padding to create space between the border and htent */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
 }
+
 .side-bar.full-height {
     height: 150vh; /* Set full height at the bottom */
 }
@@ -441,7 +459,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333; /* Background color */
+    background-color: #ff9900; /* Background color */
     color: #fff; /* Text color */
     text-align: center;
     padding: 10px; /* Adjust the padding as needed */

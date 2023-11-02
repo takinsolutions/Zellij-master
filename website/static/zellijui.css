@@ -176,7 +176,7 @@ nav ul {
     padding-right: 0.2em;
 }
 
-/* Account and Database Styling */
+/* SCRAPERLIST - Account and Database Styling */
 .account.airtable {
     margin: 1em;
     padding: 0;
@@ -287,7 +287,8 @@ nav ul {
 /* Form Fields Styling */
 .fields {
     max-width: 24em;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 180px;
     content: "";
     display: table;
     clear: both;
@@ -424,3 +425,72 @@ button:focus {
     max-width: fit-content;
 }
 
+
+
+/* LOGIN TABLE CONTENT */
+
+/* Style the login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color: #f6f6f6c5;
+  }
+  
+  /* Style the login form */
+  .login-form {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  /* Style the form title */
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Style form groups (labels and inputs) */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Style form labels */
+  .form-label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Style form inputs */
+  .form-input {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Style the Sign In button */
+  .form-button {
+    background-color: #a92c2c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #831f1f;
+  }
+  

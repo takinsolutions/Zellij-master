@@ -4,14 +4,10 @@
     <h1>{% block title %}Data Source “Scrapers”{% endblock %}</h1>
 {% endblock %}
 
-
-
-
-
 {% block content %}
     <!-- Selection bar  -->
     <div>
-        <h>Filter the type of Scrapper you want</h>
+        <h2>Filter the type of Scrapper you want</h2>
         <br/>
         <div>
             <button><a href= {{ url_for('datasources.filteredScrapper', scrapername = "Fields") }}>Fields</a></button>
