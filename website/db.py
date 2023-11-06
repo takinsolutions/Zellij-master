@@ -18,7 +18,7 @@ from website.DataScraper import DataScraper
 def get_db():
     if "db" not in g:
         g.db = MySQLdb.connect(
-          user="test", passwd="test", db="test", port=3306, host="192.168.100.6"
+          user="test", passwd="test", db="test", port=3307, host="192.168.100.6"
         )
     return g.db
 

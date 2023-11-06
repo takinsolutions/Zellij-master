@@ -12,5 +12,5 @@ bp = Blueprint("pages", __name__)
 
 @bp.route("/", methods=["GET"])
 def mainpage():
-    return render_template("big.html")
+    return render_template("index.html")
 
